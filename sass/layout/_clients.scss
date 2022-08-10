@@ -1,0 +1,46 @@
+.clients-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--social-color);
+    border-radius: 4px;
+
+    fill: var(--social-color);
+    transition: border-color var(--transition);
+}
+
+.clients {
+    padding: 94px 0px;
+}
+
+
+
+.clients .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+
+
+.clients-link:hover,
+.clients-link:focus {
+    border-color: var(--accent-color);
+
+}
+
+.clients-icon {
+    transition: fill var(--transition);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+    fill: var(--accent-color);
+}
