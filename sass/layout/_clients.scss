@@ -1,46 +1,54 @@
 .clients-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+
 
 .clients-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--social-color);
-    border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--social-color);
+  border-radius: 4px;
 
-    fill: var(--social-color);
-    transition: border-color var(--transition);
+  fill: var(--social-color);
+  transition: border-color var(--transition);
 }
 
 .clients {
-    padding: 94px 0px;
+  padding: 94px 0px;
 }
-
-
-
-.clients .item:not(:last-child) {
-    margin-right: 30px;
-}
-
-
-
 
 .clients-link:hover,
 .clients-link:focus {
-    border-color: var(--accent-color);
-
+  border-color: var(--accent-color);
 }
 
 .clients-icon {
-    transition: fill var(--transition);
+  transition: fill var(--transition);
 }
 
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
-    fill: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.clients-list .item {
+    display: flex;
+    justify-content: center;
+  width: 100%;
+    flex-basis: calc((100% - 60px) / 2);
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 180px) / 6);
+  }
 }

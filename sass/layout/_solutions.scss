@@ -1,4 +1,8 @@
 .solution {
+  @media screen and (max-width:1199px) {
+    display: none;
+  }
+
   @include padding;
 
   &__list {
