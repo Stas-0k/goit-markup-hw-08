@@ -1105,8 +1105,24 @@ a {
   display: flex;
 }
 
+.sec-port {
+  margin-top: 61px;
+}
+@media screen and (min-width: 768px) {
+  .sec-port {
+    margin-top: 81px;
+  }
+}
+
 .portfolio {
-  margin-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio-button {
@@ -1237,10 +1253,6 @@ a {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
-}
-
-.sec-port {
-  padding: 94px 0px;
 }
 
 .main-portfolio {

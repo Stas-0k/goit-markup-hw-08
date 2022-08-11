@@ -1,6 +1,20 @@
-.portfolio {
-    margin-top: 94px;
+.sec-port {
+    margin-top: 61px;
+    @media screen and (min-width:768px) {
+        margin-top: 81px;
+    }
 }
+
+.portfolio {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
 
 .portfolio-button {
     padding: 6px 22px;
@@ -117,10 +131,7 @@
     line-height: 1.88;
 }
 
-.sec-port {
 
-    padding: 94px 0px;
-}
 .main-portfolio {
     display: flex;
     flex-wrap: wrap;
