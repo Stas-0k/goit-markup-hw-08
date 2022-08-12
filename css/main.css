@@ -184,8 +184,8 @@ a {
 .modal {
   padding: 40px;
   position: relative;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   position: relative;
   background-color: var(--primary-white-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -195,6 +195,12 @@ a {
   transition: opacity var(--transition), -webkit-transform var(--transition);
   transition: transform var(--transition), opacity var(--transition);
   transition: transform var(--transition), opacity var(--transition), -webkit-transform var(--transition);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal-button {
@@ -268,11 +274,16 @@ a {
 }
 
 .modal-textarea {
-  width: 448px;
+  width: 370px;
   height: 120px;
   resize: none;
   padding: 12px 16px;
   font-weight: 400;
+}
+@media screen and (min-width: 1200px) {
+  .modal-textarea {
+    width: 450px;
+  }
 }
 
 .modal-icon {
@@ -298,8 +309,12 @@ a {
       -ms-flex-align: center;
           align-items: center;
   gap: 8px;
-  padding-left: 12px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-checkbox {
+    padding-left: 12px;
+  }
 }
 
 .modal-bttn-cont {
@@ -342,10 +357,16 @@ a {
       -ms-user-select: none;
           user-select: none;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .text-checkbox {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .modal-notification {
