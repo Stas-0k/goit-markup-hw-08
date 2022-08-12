@@ -400,9 +400,15 @@ a {
   color: var(--title-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.1666666667;
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.1923076923;
+  }
 }
 
 .logo-foot {
@@ -411,13 +417,32 @@ a {
   color: var(--title-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.1666666667;
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .logo-foot {
+    font-size: 26px;
+    line-height: 1.1923076923;
+  }
 }
 
 .logo-img {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .footer-help {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .header {
@@ -978,13 +1003,54 @@ a {
   background-color: var(--background-hero);
 }
 
+.footer-cont {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+  }
+}
+
+.footer-1 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-1 {
+    margin-right: 70px;
+    text-align: left;
+  }
+}
+
+.foooter-2 {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .foooter-2 {
+    text-align: left;
+  }
+}
+
 .footer .footer-main {
   color: var(--primary-white-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.1666666667;
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .footer .footer-main {
+    font-size: 26px;
+    line-height: 1.1923076923;
+  }
 }
 
 .footer-primary {
@@ -1023,19 +1089,13 @@ a {
   margin-bottom: 20px;
 }
 
-.footer-cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
 .footer-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .icon-footer {
@@ -1082,10 +1142,6 @@ a {
   background-color: var(--accent-color);
 }
 
-.footer-1 {
-  margin-right: 70px;
-}
-
 .footer-input {
   width: 358px;
   height: 50px;
@@ -1103,20 +1159,31 @@ a {
 }
 
 .footer-form {
-  margin-left: 93px;
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    margin-left: 93px;
+  }
 }
 
 .button-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 12px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
   max-width: 200px;
   padding: 10px 13px 10px 28px;
+}
+@media screen and (min-width: 1200px) {
+  .button-footer {
+    margin-left: 12px;
+    margin-top: 0;
+  }
 }
 
 .footer-button-icon {
@@ -1126,10 +1193,30 @@ a {
   transition: fill var(--transition);
 }
 
-.form-cont-foot {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .form-cont-foot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-cont-foot {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .sec-port {

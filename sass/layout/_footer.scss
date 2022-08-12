@@ -8,14 +8,55 @@
     background-color: var(--background-hero);
 }
 
+.footer-cont {
+   
+    align-items: baseline;
+    text-align: center;
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        text-align: left;
+    }
+    
+}
+
+.footer-1 {
+    
+    text-align: center;
+    margin-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+        margin-right: 70px;
+        text-align: left;
+    }
+    
+
+}
+
+.foooter-2 {
+    margin-bottom: 60px;
+
+    @media screen and (min-width:1200px) {
+            
+            text-align: left;
+        }
+    
+}
+
+
+
 .footer .footer-main {
     color: var(--primary-white-color);
 
     font-family: Raleway, sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: calc(28/24);
     text-decoration: none;
+    @media screen and (min-width:1200px) {
+            font-size: 26px;
+            line-height: calc(31/26);
+        }
 }
 
 .footer-primary {
@@ -55,14 +96,10 @@
     margin-bottom: 20px;
 }
 
-.footer-cont {
-    display: flex;
-    align-items: baseline;
-}
 
 .footer-list {
     display: flex;
-
+    justify-content: center;
 }
 
 .icon-footer {
@@ -103,9 +140,7 @@
     background-color: var(--accent-color);
 }
 
-.footer-1 {
-    margin-right: 70px;
-}
+
 
 .footer-input {
     width: 358px;
@@ -125,16 +160,30 @@
 }
 
 .footer-form {
+   
+   display: block;
+
+   @media screen and (min-width:1200px) {
     margin-left: 93px;
+   }
+  
+  
 }
 
 .button-footer {
-    display: flex;
-    margin-left: 12px;
+    display: inline-flex;
+    margin-top: 20px;
     align-items: center;
     padding: 0;
     max-width: 200px;
     padding: 10px 13px 10px 28px;
+
+    @media screen and (min-width:1200px) {
+            margin-left: 12px;
+            margin-top: 0;
+        }
+
+   
 }
 
 
@@ -145,5 +194,17 @@
 }
 
 .form-cont-foot {
-    display: flex;
+  
+
+    @media screen and (min-width:768px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+                 @media screen and (min-width:1200px) {
+                     
+                     flex-direction: row;
+                     justify-content: center;
+                    
+                 }
 }
