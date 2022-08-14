@@ -1,5 +1,9 @@
 .site-nav {
-  display: flex;
+  display: none;
+
+  @media screen and (min-width:768px) {
+    display: flex;
+  }
 
   &__item:not(:last-child) {
     margin-right: 50px;
@@ -42,7 +46,10 @@
 }
 
 .auth {
-  display: flex;
+  display: none;
+  @media screen and (min-width:768px) {
+    display: flex;
+  }
   align-items: center;
   margin-left: auto;
   &__item + &__item {
@@ -81,4 +88,9 @@
 .header__menu {
   display: flex;
   align-items: center;
+  position: relative;
+
+  @media screen and (max-width:767px){
+  height: 60px;
+  }
 }
