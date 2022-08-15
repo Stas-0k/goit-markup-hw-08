@@ -106,13 +106,27 @@
 
 .portfolio-menu {
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
-    justify-content: center;
+    justify-content: left;
     margin-bottom: 50px;
+
+    @media screen and (min-width:768px) {
+        justify-content: center;
+    }
 }
 
 .portfolio-menu .item:not(:last-child) {
     margin-right: 8px;
+}
+
+.portfolio-menu .item:nth-child(4), .portfolio-menu .item:nth-child(5) {
+    margin-top: 15px;
+
+    @media screen and (min-width:768px) {
+        margin-top: 0px;
+    }
+
 }
 
 .portfolio-head {
@@ -140,7 +154,14 @@
 }
 
 .main-portfolio .item {
-    width: 370px;
+    width: 450px;
+
+    @media screen and (min-width:768px) {
+        width: 354px;
+    }
+        @media screen and (min-width:1200px) {
+            width: 370px;
+        }
 }
 
 

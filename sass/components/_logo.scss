@@ -1,5 +1,5 @@
 .logo {
-    margin-right: 93px;
+    margin-right: 88px;
 
     color: var(--title-text-color);
     font-family: Raleway, sans-serif;
@@ -12,6 +12,7 @@
     @media screen and (min-width:1200px) {
         font-size: 26px;
         line-height: calc(31/26);
+        margin-right: 93px;
     }
 }
 
