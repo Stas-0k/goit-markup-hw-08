@@ -508,8 +508,8 @@ a {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  -webkit-transition: opacity var(--anim-fast), visibility var(--anim-fast);
-  transition: opacity var(--anim-fast), visibility var(--anim-fast);
+  -webkit-transition: opacity var(--transition), visibility var(--transition);
+  transition: opacity var(--transition), visibility var(--transition);
 }
 @media screen and (min-width: 768px) {
   .menu-overlay {
@@ -538,10 +538,10 @@ a {
   padding: 48px 40px;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: -webkit-transform var(--anim-fast);
-  transition: -webkit-transform var(--anim-fast);
-  transition: transform var(--anim-fast);
-  transition: transform var(--anim-fast), -webkit-transform var(--anim-fast);
+  -webkit-transition: -webkit-transform var(--transition);
+  transition: -webkit-transform var(--transition);
+  transition: transform var(--transition);
+  transition: transform var(--transition), -webkit-transform var(--transition);
 }
 .menu-overlay.is-open .menu-container {
   -webkit-transform: translateX(0);
@@ -600,6 +600,34 @@ a {
   display: flex;
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-close-icon:focus {
+  fill: var(--accent-color);
+}
+
+.current-menu {
+  color: var(--accent-color);
+}
+
+.mobile-contacts-link-phone {
+  color: var(--accent-color);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+}
+
+.mobile-contacts-item:last-child {
+  margin-top: 32px;
+}
+
+.mobile-contacts-link-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+  color: #757575;
 }
 
 .header {

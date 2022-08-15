@@ -41,7 +41,7 @@
     pointer-events: none;
     visibility: hidden;
 
-    transition: opacity var(--anim-fast), visibility var(--anim-fast);
+    transition: opacity var(--transition), visibility var(--transition);
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -66,7 +66,7 @@
     padding: 48px 40px;
 
     transform: translateX(100%);
-    transition: transform var(--anim-fast);
+    transition: transform var(--transition);
 
     .menu-overlay.is-open & {
         transform: translateX(0);
@@ -124,4 +124,34 @@
 
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-close-icon:focus{
+    fill: var(--accent-color);
+}
+
+
+.current-menu {
+    color: var(--accent-color);
+}
+
+.mobile-contacts-link-phone {
+    color: var(--accent-color);
+    font-weight: 500;
+        font-size: 34px;
+        line-height: calc(40/34);
+        letter-spacing: 0.02em;
+}
+
+.mobile-contacts-item:last-child {
+    margin-top: 32px;
+}
+
+.mobile-contacts-link-mail {
+    font-weight: 500;
+        font-size: 24px;
+        line-height: calc(28/24);
+        letter-spacing: 0.02em;
+    
+        color: #757575;
 }
