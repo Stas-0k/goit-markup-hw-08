@@ -23,7 +23,11 @@
 .footer-1 {
     
     text-align: center;
-    margin-bottom: 60px;
+    //margin-bottom: 60px;
+
+    @media screen and (max-width:767px) {
+        margin-bottom: 60px;
+    }
 
     @media screen and (min-width:1200px) {
         margin-right: 70px;
@@ -34,13 +38,20 @@
 }
 
 .foooter-2 {
-    margin-bottom: 60px;
+    //margin-bottom: 60px;
 
     @media screen and (min-width:1200px) {
             
             text-align: left;
         }
     
+}
+
+.footer-help {
+    margin-bottom: 60px;
+    @media screen and (min-width:1200px) {
+        margin-bottom: 0px;
+    }
 }
 
 
