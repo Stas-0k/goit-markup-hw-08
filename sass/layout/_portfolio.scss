@@ -44,8 +44,9 @@
 
 .portfolio-hover {
     position: relative;
-    display: block;
+    display: flex;
     transition: box-shadow var(--transition);
+    flex-direction: column;
 }
 
 .portf-cont {
@@ -58,6 +59,7 @@
     border-right: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
     padding: 20px 24px;
+    flex-grow: 1;
 }
 
 .fifth .item:not(:last-child) {
@@ -168,4 +170,8 @@
 
 .image-portfolio {
     display: block;
+}
+
+.portf-item {
+    display: flex;
 }
